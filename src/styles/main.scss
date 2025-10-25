@@ -1,0 +1,120 @@
+@import 'variables';
+
+// Map SCSS variables to CSS custom properties for runtime usage, ok je connaissais pas
+:root {
+    --parchment: #{$parchment};
+    --parchment-dark: #{$parchment-dark};
+    --ink: #{$ink};
+    --digital-bg: #{$digital-bg};
+    --accent: #{$accent};
+    --border: #{$border};
+
+    --font-sans: #{$font-sans};
+    --font-display: #{$font-display};
+
+    --container-max: #{$container-max};
+    --gutter: #{$gutter};
+}
+
+/* Simple reset / base */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* Ne pas oublier ici, c'est peut-être une mauvaise habitude... */
+    overflow-x: hidden;
+}
+
+body {
+    font-family: var(--font-sans);
+    color: var(--ink);
+    background: var(--parchment);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.45;
+}
+
+/* Container helper */
+.container {
+    width: 100%;
+    max-width: var(--container-max);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+}
+
+/* Test du full-bleed, j'ai pas retenu la leçon avec l'autre projet */
+.section-digital {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+/* Voir à l'usure */
+.full-bleed {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+/* Simple utilities */
+.h-center {
+    text-align: center;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+/* Responsive helpers (examples) */
+// @media (max-width: $bp-mobile) {
+//     .site-main {
+//         padding: 1rem;
+//     }
+// }
+
+/* Test scrollbar, si le temps aller plus loin là dessus*/
+/* WebKit browsers (Chrome, Edge, Safari), regarder en détail quand temps */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--parchment);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.2); /* + sombre */
+    border-radius: 999px;
+    border: 3px solid var(--parchment); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0,0,0,0.32);
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0,0,0,0.2) var(--parchment);
+}
+
+/* Test thumb */
+@media (max-width: 600px) {
+    ::-webkit-scrollbar { width: 10px; height: 10px }
+}
