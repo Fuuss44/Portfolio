@@ -5,7 +5,8 @@
       <div class="footer-links">
         
   <!-- Lien de téléchargement vers le PDF placé dans public/assets -->
-  <a class="footer-cv" href="/assets/Paul Orieux - CV 10_2025.pdf" download="Paul_Orieux_Cv.pdf" type="application/pdf" rel="noopener">Download CV (PDF)</a>
+  <!-- Test for fixing CV dl issues '/' -->
+  <a class="footer-cv" href="assets/Paul Orieux - CV 10_2025.pdf" download="Paul_Orieux_Cv.pdf" type="application/pdf" rel="noopener">Download CV (PDF)</a>
       </div>
     </div>
   </footer>
