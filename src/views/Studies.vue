@@ -190,7 +190,7 @@
               <p class="skill-label"><strong>Description</strong></p>
               <p class="skill-excerpt">Quality, traceability and ethical aspects related to data.</p>
               <p class="skill-label"><strong>Tools</strong></p>
-              <p class="skill-tools-list">Code de la propriété intellectuelle · GDPR</p>
+              <p class="skill-tools-list">Intellectual property law · GDPR</p>
             </div>
           </details>
 
@@ -227,7 +227,7 @@
             </summary>
             <div class="skill-body">
               <p class="skill-label"><strong>Description</strong></p>
-              <p class="skill-excerpt">HTML, CSS, Vue and accessibility (simple interface, accesible colors).</p>
+              <p class="skill-excerpt">HTML, CSS, Vue and accessibility (simple interface, accessible colors).</p>
               <p class="skill-label"><strong>Tools</strong></p>
               <p class="skill-tools-list">Vite · Pinia · Vue Router · SCSS</p>
             </div>

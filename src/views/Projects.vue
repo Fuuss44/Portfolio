@@ -3,8 +3,8 @@
   <main class="page section-digital">
     <div class="container">
       <header class="page-header">
-        <h1>Projects</h1>
-        <p class="lead">A selection of my work (personal & group projects), repository links will be available once they are made public.</p>
+  <h1>Projects</h1>
+  <p class="lead">A selection of my work (personal & group projects). Repository links will be available when they are made public.</p>
       </header>
 
       <!-- Bouton vers le repo github quand ils seront à jour... -->
@@ -61,7 +61,7 @@
           <h3>Market study - Domaine des Croix (US positioning)</h3>
           <p class="meta"><strong>Tech</strong>: Python (Pandas, Matplotlib, Seaborn) · Power BI · Power Query · DAX</p>
           <ul>
-            <li>• Analyze > 130,000 wines (varieties, country, region, vintage, scores, prices in USD);</li>
+            <li>• Analyze over 130,000 wines (varieties, country, region, vintage, scores, prices in USD);</li>
             <li>• Compare Pinot Noir vs other Bourgogne wines on price and ratings;</li>
             <li>• Identify competitive pricing for US market while preserving margin;</li>
             <li>• Data cleaning and feature extraction in Python; visualizations in Matplotlib/Seaborn;</li>
