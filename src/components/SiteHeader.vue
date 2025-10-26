@@ -1,11 +1,11 @@
 <template>
   <header class="site-header">
     <div class="container header-inner">
-  <a class="brand" href="/" aria-label="Home">
+  <router-link to="/" class="brand" aria-label="Home">
         <!-- optional logo -->
         <!-- <img src="/assets/logo.svg" alt="Logo" class="logo" /> -->
         <span class="brand-name">Paul Orieux</span>
-      </a>
+      </router-link>
 
   <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open menu">
         <span class="burger-box"><span class="burger-inner"></span></span>
